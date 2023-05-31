@@ -2,7 +2,7 @@
 
 Дипломная работа для Яндекс Практикума.
 
-IP 84.201.178.240
+IP 158.160.14.188
 Backend
 api.movies-exp.nomoredomains.rocks
 Frontend
