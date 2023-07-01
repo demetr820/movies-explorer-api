@@ -22,7 +22,7 @@ const validation = {
       description: Joi.string().required(),
       image: Joi.string().required(),
       trailerLink: Joi.string().required(),
-      // owner: Joi.string().length(24).hex().required(),
+      owner: Joi.string().length(24).hex().required(),
       nameRU: Joi.string()
         .required()
         .regex(/^[а-яА-Я0-9\s]+$/),
@@ -39,11 +39,6 @@ const validation = {
       email: Joi.string().min(2).max(30),
     }),
   }),
-  // validateAvatar: celebrate({
-  //   body: Joi.object().keys({
-  //     avatar: Joi.string().custom(validateURL).required(),
-  //   }),
-  // }),
   validateSignup: celebrate({
     body: Joi.object().keys({
       name: Joi.string().min(2).max(30).required(),
