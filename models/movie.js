@@ -46,7 +46,6 @@ const movieSchema = new mongoose.Schema(
     },
     owner: {
       type: mongoose.Schema.Types.ObjectId,
-      // ref: "user",
       required: true,
     },
     movieId: {
@@ -61,15 +60,6 @@ const movieSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    // owner: {
-    //   type: mongoose.Schema.Types.ObjectId,
-    //   ref: "user",
-    //   required: true,
-    // },
-    // createdAt: {
-    //   type: Date,
-    //   default: Date.now,
-    // },
   },
   { versionKey: false }
 );

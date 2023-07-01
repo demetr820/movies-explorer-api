@@ -17,9 +17,6 @@ const validateURL = (value) => {
   return value;
 };
 
-// module.exports = HTTP_STATUS;
-// exports.validateURL = validateURL;
-
 module.exports = {
   HTTP_STATUS,
   validateURL,
