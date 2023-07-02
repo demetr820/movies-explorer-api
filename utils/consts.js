@@ -12,7 +12,6 @@ const HTTP_STATUS = {
 };
 const validateURL = (value) => {
   if (!validator.isURL(value, { require_host: false })) {
-    console.log("Validator");
     throw new BadRequestError("Неправильный формат ссылки");
   }
   return value;
