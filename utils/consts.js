@@ -11,7 +11,8 @@ const HTTP_STATUS = {
   SERVER_ERROR: 500,
 };
 const validateURL = (value) => {
-  if (!validator.isURL(value, { require_protocol: true })) {
+  if (!validator.isURL(value, { require_host: false })) {
+    console.log("Validator");
     throw new BadRequestError("Неправильный формат ссылки");
   }
   return value;
