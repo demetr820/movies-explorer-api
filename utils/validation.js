@@ -22,7 +22,7 @@ const validation = {
       description: Joi.string().required(),
       image: Joi.string().required(),
       trailerLink: Joi.string().required(),
-      owner: Joi.string().length(24).hex().required(),
+      owner: Joi.string().length(24).hex(),
       nameRU: Joi.string()
         .required()
         .regex(/^[а-яА-Я0-9\s]+$/),
