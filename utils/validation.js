@@ -23,12 +23,8 @@ const validation = {
       image: Joi.string().required(),
       trailerLink: Joi.string().required(),
       owner: Joi.string().length(24).hex(),
-      nameRU: Joi.string()
-        .required()
-        .regex(/^[а-яА-Яa-zA-Z0-9\s!'"«»:]+$/),
-      nameEN: Joi.string()
-        .required()
-        .regex(/^[a-zA-Z0-9\s!'":]+$/),
+      nameRU: Joi.string().required(),
+      nameEN: Joi.string().required(),
       thumbnail: Joi.string().required(),
       movieId: Joi.number().required(),
     }),
